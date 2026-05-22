@@ -1,52 +1,199 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>URL Rotator</title>
-    <style>
-        /* Modern reset to ensure full-screen coverage */
-        body, html { 
-            margin: 0; 
-            padding: 0; 
-            height: 100%; 
-            width: 100%;
-            overflow: hidden; 
-            background-color: #000; /* Prevents bright white flashes between loads */
-        }
-        iframe { 
-            width: 100%; 
-            height: 100%; 
-            border: none; 
-            display: block;
-        }
-    </style>
-</head>
-<body>
+<h1>Formulario de Evaluación para Promoción Laboral</h1>
 
-    <iframe id="display-frame" src=""></iframe>
+<p><strong>Objetivo:</strong> Evaluar la idoneidad del candidato para asumir mayores responsabilidades basándose en su desempeño histórico y su potencial futuro.</p>
 
-    <script>
-        (function() {
-            const urls = [
-                "https://displayboard.advancedscoreboard.com/?c=1b965a5f-18d7-11f1-a023-005056bb8667&d=a37e4191-18d7-11f1-a023-005056bb8667&k=T3y7XXr5KoYiEsc74AaevhFUn2s6xYWCJ7IHGOqv&v=1&mb=1&da=
-                "https://displayboard.advancedscoreboard.com/?c=1b965a5f-18d7-11f1-a023-005056bb8667&d=a37e4191-18d7-11f1-a023-005056bb8667&k=r6YxvNDiyeHXuHEkF3FdivlRhK3o9X8CCEblIMEP&v=1&mb=1&da="
-            ];
-            
-            const intervalSeconds = 60;
-            let index = 0;
-            const frame = document.getElementById('display-frame');
+<h2>Información General</h2>
+<ul>
+    <li><strong>Nombre del Candidato:</strong> ___________________________</li>
+    <li><strong>Posición Actual:</strong> __________________________</li>
+    <li><strong>Posición Objetivo:</strong> ___________________________</li>
+    <li><strong>Nombre del Evaluador:</strong> ___________________________</li>
+    <li><strong>Fecha de Evaluación:</strong> ________________________</li>
+</ul>
 
-            function rotate() {
-                if (frame) {
-                    frame.src = urls[index];
-                    index = (index + 1) % urls.length;
-                }
-                setTimeout(rotate, intervalSeconds * 1000);
-            }
+<h2>Guía de Calificación (Escala 1-5)</h2>
+<ul>
+    <li><strong>1 - Insatisfactorio:</strong> No cumple con los requisitos mínimos.</li>
+    <li><strong>2 - En Desarrollo:</strong> Cumple parcialmente; necesita supervisión constante.</li>
+    <li><strong>3 - Competente:</strong> Cumple con todas las expectativas de manera constante.</li>
+    <li><strong>4 - Sobresaliente:</strong> Supera las expectativas; demuestra autonomía.</li>
+    <li><strong>5 - Excepcional:</strong> Referente para el equipo; ya opera al nivel del puesto objetivo.</li>
+</ul>
 
-            // Start the rotation once the DOM is ready
-            window.addEventListener('DOMContentLoaded', rotate);
-        })();
-    </script>
-</body>
-</html>
+<br>
+
+<h2>I. Fiabilidad, Asistencia y Presencia Profesional</h2>
+<p>Centrado en la disciplina básica y la imagen institucional.</p>
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; border-color: #cccccc;">
+    <thead>
+        <tr style="background-color: #f2f2f2;">
+            <th align="left" style="width: 30%;">Criterios</th>
+            <th align="left" style="width: 55%;">Métricas / Observaciones</th>
+            <th align="left" style="width: 15%;">Calificación (1-5)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="left">Puntualidad y Gestión de Tiempos</td>
+            <td align="left">Cumplimiento de horarios de entrada, salida y descansos.</td>
+            <td align="left"></td>
+        </tr>
+        <tr style="background-color: #fafafa;">
+            <td align="left">Registro de Asistencia</td>
+            <td align="left">Ausencias injustificadas o "No Llamadas" (Últimos 6 meses: ____).</td>
+            <td align="left"></td>
+        </tr>
+        <tr>
+            <td align="left">Imagen y Protocolo</td>
+            <td align="left">Representa los valores de la empresa en su vestimenta y trato profesional.</td>
+            <td align="left"></td>
+        </tr>
+        <tr style="background-color: #fafafa;">
+            <td align="left">Disponibilidad</td>
+            <td align="left">Fiabilidad para cubrir turnos o emergencias cuando el negocio lo requiere.</td>
+            <td align="left"></td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>Comentarios de la sección:</strong> _________________________________________________</p>
+
+<br>
+
+<h2>II. Rendimiento, Calidad y Competencia Técnica</h2>
+<p>Centrado en la ejecución técnica y la capacidad de entrega.</p>
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; border-color: #cccccc;">
+    <thead>
+        <tr style="background-color: #f2f2f2;">
+            <th align="left" style="width: 30%;">Criterios</th>
+            <th align="left" style="width: 55%;">Métricas / Observaciones</th>
+            <th align="left" style="width: 15%;">Calificación (1-5)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="left">Calidad del Trabajo</td>
+            <td align="left">Precisión en las tareas; bajo índice de errores o retrabajos.</td>
+            <td align="left"></td>
+        </tr>
+        <tr style="background-color: #fafafa;">
+            <td align="left">Cumplimiento de Objetivos (KPIs)</td>
+            <td align="left">Capacidad para alcanzar o superar las metas establecidas.</td>
+            <td align="left"></td>
+        </tr>
+        <tr>
+            <td align="left">Conocimiento Institucional</td>
+            <td align="left">Entiende los procesos internos, la cultura y la estructura de la empresa.</td>
+            <td align="left"></td>
+        </tr>
+        <tr style="background-color: #fafafa;">
+            <td align="left">Aptitud para el Nuevo Puesto</td>
+            <td align="left">Posee o ha demostrado aprender rápido las habilidades técnicas del puesto objetivo.</td>
+            <td align="left"></td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>Comentarios de la sección:</strong> _________________________________________________</p>
+
+<br>
+
+<h2>III. Operación y Manejo de Maquinaria</h2>
+<p>Centrado en el uso responsable, seguro y óptimo de las herramientas y equipos de la empresa.</p>
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; border-color: #cccccc;">
+    <thead>
+        <tr style="background-color: #f2f2f2;">
+            <th align="left" style="width: 30%;">Criterios</th>
+            <th align="left" style="width: 55%;">Métricas / Observaciones</th>
+            <th align="left" style="width: 15%;">Calificación (1-5)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="left">Seguridad en la Operación</td>
+            <td align="left">Utiliza siempre el equipo de protección personal (EPP) y sigue estrictamente los protocolos de seguridad para prevenir accidentes.</td>
+            <td align="left"></td>
+        </tr>
+        <tr style="background-color: #fafafa;">
+            <td align="left">Monitoreo y Diagnóstico Activo</td>
+            <td align="left">Presta atención constante al funcionamiento del equipo (ruidos, alertas, indicadores) y detecta a tiempo cualquier anomalía o fallo.</td>
+            <td align="left"></td>
+        </tr>
+        <tr>
+            <td align="left">Cuidado y Preservación del Equipo</td>
+            <td align="left">Opera la maquinaria de manera adecuada y precavida para evitar averías, daños estructurales, desgastes innecesarios o retrabajos en las áreas de uso.</td>
+            <td align="left"></td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>Comentarios de la sección:</strong> _________________________________________________</p>
+
+<br>
+
+<h2>IV. Liderazgo, Actitud y Crecimiento</h2>
+<p>Centrado en habilidades blandas y potencial de gestión.</p>
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; border-color: #cccccc;">
+    <thead>
+        <tr style="background-color: #f2f2f2;">
+            <th align="left" style="width: 30%;">Criterios</th>
+            <th align="left" style="width: 55%;">Métricas / Observaciones</th>
+            <th align="left" style="width: 15%;">Calificación (1-5)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="left">Inteligencia Emocional</td>
+            <td align="left">Mantiene la calma bajo presión y maneja conflictos de forma constructiva.</td>
+            <td align="left"></td>
+        </tr>
+        <tr style="background-color: #fafafa;">
+            <td align="left">Iniciativa y Autonomía</td>
+            <td align="left">Propone mejoras y resuelve problemas sin esperar instrucciones directas.</td>
+            <td align="left"></td>
+        </tr>
+        <tr>
+            <td align="left">Trabajo en Equipo / Mentoría</td>
+            <td align="left">Ayuda a otros compañeros y fomenta un ambiente de colaboración.</td>
+            <td align="left"></td>
+        </tr>
+        <tr style="background-color: #fafafa;">
+            <td align="left">Adaptabilidad al Cambio</td>
+            <td align="left">Reacciona positivamente ante nuevas herramientas, procesos o desafíos.</td>
+            <td align="left"></td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>Comentarios de la sección:</strong> _________________________________________________</p>
+
+<br>
+
+<h2>V. Recomendación Final y Plan de Acción</h2>
+<p><strong>Puntuación Total:</strong> ________ / 75 (Basado en 15 criterios)</p>
+
+<p><strong>Estado de Preparación:</strong></p>
+<p>[ &nbsp; ] <strong>Listo para el Ascenso:</strong> Posee las competencias necesarias para asumir el cargo de inmediato.<br>
+[ &nbsp; ] <strong>En Desarrollo Estratégico:</strong> Posee el potencial, pero requiere capacitación técnica o coaching (3–6 meses).<br>
+[ &nbsp; ] <strong>No Preparado en este Momento:</strong> Requiere mejora significativa en sus funciones actuales antes de ser reconsiderado.</p>
+
+<p><strong>Análisis Cualitativo:</strong></p>
+<ul>
+    <li><strong>Fortaleza Clave:</strong> __________________________________________________________</li>
+    <li><strong>Área Crítica de Mejora:</strong> ____________________________________________________</li>
+</ul>
+
+<p><strong>Plan de Próximos Pasos (Si aplica):</strong><br>
+<em>(Ejemplo: Certificación técnica, curso de liderazgo, asignación a un proyecto especial)</em></p>
+<p>____________________________________________________________________________________________________________________________________</p>
+
+<br>
+
+<h2>Firmas de Conformidad</h2>
+<p><strong>Firma del Evaluador:</strong> ___________________________ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Fecha:</strong> ___________</p>
+<p><strong>Firma del Empleado:</strong> ____________________________ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Fecha:</strong> ___________</p>
+<p><small><em>(La firma confirma la recepción de la retroalimentación, no necesariamente el acuerdo total con la calificación).</em></small></p>
